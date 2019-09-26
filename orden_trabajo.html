@@ -332,6 +332,23 @@
               <div class="card-body">
                 <h5>Datos del cliente</h5>
                 <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-1">
+                      <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option required value="NULL" selected>Selecciona...</option>
+                        <option required value="NULL" >Cliente 1</option>
+                        <option required value="NULL" >Cliente 2</option>
+                        <option required value="NULL" >Cliente 3</option>
+                      </select>
+                    </div>
+                    <div class="col-auto">
+                      <button data-toggle="modal" data-target="#modalTipo" title="Crea un nuevo cliente" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                <h5>Datos de la maquinaria</h5>
+                <form>
                   <div class="form-row">
                     <div class="col">
                       <input type="text" class="form-control" placeholder="First name">
@@ -342,7 +359,7 @@
                   </div>
                 </form>
                 <hr>
-                <h5>Datos de la maquinaria</h5>
+                <h5>Detalle Servicios</h5>
                 <form>
                   <div class="form-row">
                     <div class="col">
