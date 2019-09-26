@@ -330,8 +330,10 @@
                 Crear Orden de Trabajo
               </div>
               <div class="card-body">
-                <h5>Cliente</h5>
+                <h5>Datos del cliente</h5>
+                <hr>
                 <form>
+                  <p>Nombre cliente:</p>
                   <div class="form-row align-items-center">
                     <div class="col-md-3 col-sm-6 my-1">
                       <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -347,6 +349,23 @@
                     <div class="form-check">
                       <input id="intermediario" method="post" type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Hay intermediario</label>
+                    </div>
+                  </div>
+                </form>
+                <form id="Carga_intermediario" style="display:none;">
+                  <br>
+                  <p>Nombre intermediario:</p>
+                  <div class="form-row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-1">
+                      <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option required value="NULL" selected>Selecciona...</option>
+                        <option required value="NULL" >Intermediario 1</option>
+                        <option required value="NULL" >Intermediario 2</option>
+                        <option required value="NULL" >Intermediario 3</option>
+                      </select>
+                    </div>
+                    <div class="col-auto">
+                      <button data-toggle="modal" data-target="#modalCarga_intermediario" title="Crea un nuevo intermediario" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
                     </div>
                   </div>
                 </form>
@@ -517,6 +536,17 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
+    <script type="text/javascript">
+    $('#intermediario').change(function () {
+      if ($('#intermediario').is(':checked'))
+      {
+        $("#Carga_intermediario").show("slow");
+      }
+      else
+      {
+        $("#Carga_intermediario").hide();
+      }
+    });
+    </script>
   </body>
   </html>
