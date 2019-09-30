@@ -399,11 +399,36 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card col col-6" style="border:#fff;">
-                    <div class="card-body">
-                      <h5>Detalle de servicios</h5>
-                      <hr>
-                      
+                </div>
+                <div class="card col col-12" style="border:#fff;padding-left:1.25rem;">
+                  <div class="card-body">
+                    <h5>Detalle de servicios</h5>
+                    <hr>
+                    <div class="form-row align-items-center">
+                      <div class="col">
+                      <label>Concepto</label>
+                        <select  name="persona" id="persona" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                          <option selected value="NULL">Selecciona...</option>
+                          <option value="NULL">Mano de obra</option>
+                          <option value="NULL">Repuesto 1</option>
+                          <option value="NULL">Repuesto 2</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label>Monto</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">$</span>
+                          </div>
+                          <input method="POST" id="monto_persona" name="monto_persona" type="number" class="form-control" value="0">
+                        </div>
+                      </div>
+                      <div class="col-auto" style="margin-top:2rem;">
+                        <button id="carga_persona" data-toggle="tooltip" data-placement="top" title="Acepta" type="button" onclick="muestra_persona()" class="btn btn-primary"><i class="fas fa-check"></i></button>
+                      </div>
+                      <div class="col-auto" style="margin-top:2rem;">
+                        <button data-toggle="modal" data-target="#modalCarga" title="Carga a una nueva persona" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
