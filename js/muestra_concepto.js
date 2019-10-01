@@ -22,23 +22,20 @@ var muestra_concepto=function()
       }
   }
 }
-  var quitar_persona1=function()
+  var quitar_concepto1=function()
   {
     $(document).ready(function()
     {
-      $("#persona_ingreso_1").hide();
+      $("#muestra_concepto_1").hide();
     });
-    document.getElementById("nombre_persona_1").value="";
-    document.getElementById("fecha_persona_1").value="";
-    document.getElementById("monto_persona_1").value="0";
-    document.getElementById('carga_persona').disabled=false;
+    document.getElementById("nombre_concepto_1").value="";
+    document.getElementById("monto_concepto_1").value="0";
+    document.getElementById('carga_concepto').disabled=false;
     $("#persona_ingreso_1").css("background", "#fadbd8");
-    $("#persona_ingreso_1").css("border-left", "0.25rem solid rgb(231, 74, 59)");
-    $("#fecha_persona_1").css("background", "#fadbd8");
+    $("#persona_ingreso_1").css("border-left", "0.25rem solid rgb(231, 74, 59)")
     $("#monto_persona_1").css("background", "#fadbd8");
     $("#nombre_persona_1").css("background", "#fadbd8");
     $("#nom_id_1").css("background", "#fadbd8");
-    $("#fecha_1").css("background", "#fadbd8");
     $("#monto_1").css("background", "#fadbd8");
     pos[0]=true;
     if (pos[0]==true && pos[1]==true && pos[2]==true && pos[3]==true && pos[4]==true && pos[5]==true)
