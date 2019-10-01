@@ -406,19 +406,19 @@
                     <hr>
                     <div class="form-row align-items-center">
                       <div class="col">
-                      <label>Concepto</label>
-                        <select  name="persona" id="persona" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <label>Concepto</label>
+                        <select id="concepto" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                           <option selected value="NULL">Selecciona...</option>
-                          <option value="NULL">Mano de obra</option>
-                          <option value="NULL">Repuesto 1</option>
-                          <option value="NULL">Repuesto 2</option>
+                          <option value="Mano de obra">Mano de obra</option>
+                          <option value="Repuesto 1">Repuesto 1</option>
+                          <option value="Repuesto 2">Repuesto 2</option>
                         </select>
                       </div>
                       <div class="col">
                         <label>Monto</label>
                         <div class="input-group">
                           <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">$</span>
+                            <span class="input-group-text" id="basic-addon1">$</span>
                           </div>
                           <input id="monto_concepto" type="number" class="form-control" value="0">
                         </div>
@@ -428,6 +428,33 @@
                       </div>
                       <div class="col-auto" style="margin-top:2rem;">
                         <button data-toggle="modal" data-target="#modalCarga" title="Carga a un nuevo concepto" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></i></button>
+                      </div>
+
+
+                      <!-- conceptos a pagar -->
+
+
+                      <div id="muestra_concepto_1" class="alert alert-light alert-dismissible fade show" style="display:none; margin-top:0.5rem; margin-right:1rem;background:#fadbd8; border-left: .25rem solid #e74a3b!important;" role="alert">
+                        <!--***** nombre***** -->
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span style="background:#fadbd8;border:0px;" class="input-group-text" id="nom_id_1"><b>Concepto:</b></span>
+                            </div>
+                            <input class="form-control" type="text" id="nombre_concepto_1" style="background:#fadbd8;border:0px;" value="" readonly>
+                          </div>
+
+                          <!--*****monto***** -->
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span style="background:#fadbd8;border:0px;" class="input-group-text" id="monto_1"><b>Monto:</b> $</span>
+                            </div>
+                            <input value="0" class="form-control" type="text" id="monto_concepto_1" style="background:#fadbd8;border:0px;" value="" readonly>
+                          </div>
+                        </div>
+                        <button onclick="quitar_persona1()" class="close" type="button" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -605,5 +632,6 @@
       }
     });
     </script>
+    <script src="js\muestra_concepto.js"></script>
   </body>
   </html>
