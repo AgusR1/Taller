@@ -435,7 +435,7 @@
 
                     <!-- conceptos a pagar -->
 
-
+                    <!-- concepto 1 -->
                     <div id="muestra_concepto_1" class="col alert alert-light alert-dismissible fade show" style="display:none; margin-top:0.5rem; margin-right:1rem;background:#fadbd8; border-left: .25rem solid #e74a3b!important;" role="alert">
                       <!--***** nombre***** -->
                       <div class="form-group">
@@ -455,6 +455,29 @@
                         </div>
                       </div>
                       <button onclick="quitar_concepto1()" class="close" type="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- concepto 2 -->
+                    <div id="muestra_concepto_2" class="col alert alert-light alert-dismissible fade show" style="display:none; margin-top:0.5rem; margin-right:1rem;background:#fadbd8; border-left: .25rem solid #e74a3b!important;" role="alert">
+                      <!--***** nombre***** -->
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span style="background:#fadbd8;border:0px;" class="input-group-text" id="nom_id_2"><b>Concepto:</b></span>
+                          </div>
+                          <input class="form-control" type="text" id="nombre_concepto_2" style="background:#fadbd8;border:0px;" value="" readonly>
+                        </div>
+
+                        <!--*****monto***** -->
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span style="background:#fadbd8;border:0px;" class="input-group-text" id="monto_2"><b>Monto:</b> $</span>
+                          </div>
+                          <input value="0" class="form-control" type="text" id="monto_concepto_2" style="background:#fadbd8;border:0px;" value="" readonly>
+                        </div>
+                      </div>
+                      <button onclick="quitar_concepto2()" class="close" type="button" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>

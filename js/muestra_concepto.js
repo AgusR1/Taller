@@ -21,6 +21,29 @@ var muestra_concepto=function()
         alert("No se permiten campos vacios o personas repetidas");
       }
   }
+  else
+  {
+    if (pos[1]==true)
+    {
+      var ingreso_concepto=$("#concepto option:selected").val();
+      if (ingreso_concepto!="NULL" && document.getElementById("monto_concepto").value!="")
+      {
+        var monto_concepto_1=document.getElementById("monto_concepto").value;
+        document.getElementById("nombre_concepto_2").value=ingreso_concepto;
+        document.getElementById("monto_concepto_2").value=monto_concepto_2;
+        $(document).ready(function()
+        {
+          $("#muestra_concepto_2").show("slow");
+        });
+        pos[0]=false;
+        document.getElementById("monto_concepto").value="0";
+      }
+      else
+      {
+        alert("No se permiten campos vacios o personas repetidas");
+      }
+    }
+  }
 }
   var quitar_concepto1=function()
   {
@@ -33,8 +56,8 @@ var muestra_concepto=function()
     document.getElementById('carga_concepto').disabled=false;
     $("#persona_ingreso_1").css("background", "#fadbd8");
     $("#persona_ingreso_1").css("border-left", "0.25rem solid rgb(231, 74, 59)")
-    $("#monto_persona_1").css("background", "#fadbd8");
-    $("#nombre_persona_1").css("background", "#fadbd8");
+    $("#monto_concepto_1").css("background", "#fadbd8");
+    $("#nombre_concepto_1").css("background", "#fadbd8");
     $("#nom_id_1").css("background", "#fadbd8");
     $("#monto_1").css("background", "#fadbd8");
     pos[0]=true;
