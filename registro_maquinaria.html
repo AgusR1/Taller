@@ -367,16 +367,16 @@
                               <label>Modelo</label>
                               <select id="Modelo" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                 <option selected value="NULL">Selecciona...</option>
-                                <option value="Modelo 1">Modelo 1</option>
-                                <option value="Modelo 2">Modelo 2</option>
-                                <option value="Modelo 3">Modelo 3</option>
+                                <option value="1">Modelo 1</option>
+                                <option value="2">Modelo 2</option>
+                                <option value="3">Modelo 3</option>
                               </select>
                             <div class="col-auto">
                               <button data-toggle="modal" data-target="#modalCarga_modelo" title="Crea un nuevo modelo" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
                            </div>
                             <div class="form-group col-md-6">
                             <label for="inputMarca">Marca</label>
-                            <input type="text" class="form-control" id="inputMarca">
+                            <input type="text" readonly class="form-control" id="inputMarca">
                             </div>
                           <div class="form-group col-md-6">
                             <label for="inputPatente">Patente</label>
@@ -532,7 +532,7 @@
       </div>
       <!--************************-->
 
-       <!-- Modal Registra Cliente-->
+       <!-- Modal registra modelo-->
     <div class="modal fade" id="modalCarga_modelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <form>
@@ -568,7 +568,7 @@
                  </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
+                <button type="submit" class="btn btn-primary">Aceptar</button>
               </div>
             </div>
           </form>
@@ -576,7 +576,7 @@
       </div>
       <!--************************-->
 
-       <!-- Modal Registra Cliente-->
+       <!-- Modal Registra marca-->
     <div class="modal fade" id="modalCarga_marca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <form>
@@ -595,7 +595,7 @@
                   </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
+                <button type="submit" class="btn btn-primary">Aceptar</button>
               </div>
             </div>
           </form>
@@ -619,6 +619,28 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script type="text/javascript">
+        $('#Modelo').change(function () {
+          if (document.getElementById('Modelo').value="1")
+          {
+            document.getElementById('inputMarca').value="Marca 1";
+          }
+          else 
+          {
+            if (document.getElementById('Modelo').value="2")
+            {
+            document.getElementById('inputMarca').value="Marca 2";
+            }
+            else 
+            {
+                if (document.getElementById('Modelo').value="3")
+                {
+                document.getElementById('inputMarca').value="Marca 3";
+                }
+            }
+          }
+        });
+        </script>
 
   </body>
 </html>
