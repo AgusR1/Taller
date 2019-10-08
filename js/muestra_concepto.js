@@ -28,7 +28,7 @@ var muestra_concepto=function()
       var ingreso_concepto=$("#concepto option:selected").val();
       if (ingreso_concepto!="NULL" && document.getElementById("monto_concepto").value!="")
       {
-        var monto_concepto_1=document.getElementById("monto_concepto").value;
+        var monto_concepto_2=document.getElementById("monto_concepto").value;
         document.getElementById("nombre_concepto_2").value=ingreso_concepto;
         document.getElementById("monto_concepto_2").value=monto_concepto_2;
         $(document).ready(function()
