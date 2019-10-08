@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Registro Cliente</title>
+    <title>Registro Maquinaria</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -45,45 +45,50 @@
 
         <!-- Heading -->
         <div class="sidebar-heading">
-          Ordenes
+          Formularios
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
-            <i class="far fa-file-alt"></i>
-            <span>Orden de Compra</span>
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fax"></i>
+            <span>Ordenes</span>
           </a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Components:</h6>
+              <a class="collapse-item" href="buttons.html">Orden de compra</a>
+              <a class="collapse-item" href="cards.html">Orden de trabajo</a>
+            </div>
+          </div>
         </li>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="orden_trabajo.html" >
-            <i class="far fa-file-alt"></i>
-            <span>Orden de Trabajo</span>
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Utilities</span>
           </a>
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Custom Utilities:</h6>
+              <a class="collapse-item" href="utilities-color.html">Colors</a>
+              <a class="collapse-item" href="utilities-border.html">Borders</a>
+              <a class="collapse-item" href="utilities-animation.html">Animations</a>
+              <a class="collapse-item" href="utilities-other.html">Other</a>
+            </div>
+          </div>
         </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider">
 
         <!-- Heading -->
         <div class="sidebar-heading">
-          Registros
+          Base de Datos
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
-        <!-- Repuestos y maquinarias -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaquinaria" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-tractor"></i>
-            <span>Maquinarias</span>
-          </a>
-          <div id="collapseMaquinaria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="registro_maquinaria.html">Registrar Maquinaria</a>
-                <a class="collapse-item" href="registro_maquinaria.html">Ver maquinarias</a>
-            </div>
-          </div>
-        </li>
-
         <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes" aria-expanded="true" aria-controls="collapsePages">
             <i class="fas fa-address-card"></i>
@@ -104,8 +109,8 @@
           </a>
           <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="registro_proveedor.html">Registrar Proveedor</a>
-                <a class="collapse-item" href="registro_proveedor.html">Ver Proveedores</a>
+                <a class="collapse-item" href="registro_cliente.html">Registrar Proveedor</a>
+                <a class="collapse-item" href="registro_cliente.html">Ver Proveedores</a>
             </div>
           </div>
         </li>
@@ -113,12 +118,13 @@
         <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRepuestos" aria-expanded="true" aria-controls="collapsePages">
             <i class="fas fa-tools"></i>
-            <span>Repuestos</span>
+            <span>Repuestos y maquinarias</span>
           </a>
           <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="registro_cliente.html">Registrar Repuestos</a>
                 <a class="collapse-item" href="registro_cliente.html">Ver repuestos</a>
+                <a class="collapse-item" href="registro_cliente.html">Ver maquinarias</a>
             </div>
           </div>
         </li>
@@ -325,7 +331,63 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid col-lg-9">
-
+            <div class="card border-left-primary" style="margin-bottom:2rem;">
+              <div class="card-header">
+                Registrar Maquinaria
+              </div>
+              <div class="card-body">
+                <form>
+                    <div class="card-body form-row">
+                      <div class="card col col-6" style="border:#fff;">
+                        <div class="card-body">
+                          <h5>Datos del cliente</h5>
+                          <hr>
+                          <p>Nombre cliente:</p>
+                    <div class="col-md-8 col-sm-6 my-1">
+                        <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                          <option required value="NULL" selected>Selecciona...</option>
+                          <option required value="NULL" >Cliente 1</option>
+                          <option required value="NULL" >Cliente 2</option>
+                          <option required value="NULL" >Cliente 3</option>
+                        </select>
+                      </div>  
+                      <div class="col-auto">
+                        <button data-toggle="modal" data-target="#modalCarga_cliente" title="Crea un nuevo cliente" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                     </div>
+                     </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card col col-6" style="border:#fff;">
+                        <div class="card-body">
+                          <h5>Datos de la maquinaria</h5>
+                          <hr> 
+                          <div class="form-row align-items-center">
+                            <div class="col">
+                              <label>Modelo</label>
+                              <select id="Modelo" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected value="NULL">Selecciona...</option>
+                                <option value="Modelo 1">Modelo 1</option>
+                                <option value="Modelo 2">Modelo 2</option>
+                                <option value="Modelo 3">Modelo 3</option>
+                              </select>
+                            <div class="col-auto">
+                              <button data-toggle="modal" data-target="#modalCarga_modelo" title="Crea un nuevo modelo" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                           </div>
+                            <div class="form-group col-md-6">
+                            <label for="inputMarca">Marca</label>
+                            <input type="text" class="form-control" id="inputMarca">
+                            </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPatente">Patente</label>
+                            <input type="text" class="form-control" id="inputPatente">
+                            </div>  
+                        </div>
+                    </div>
+                  <button type="submit" class="btn btn-primary">Siguiente</button>
+                </form>
+              </div>
+            </div>
           </div>
           <!-- /.container-fluid -->
 
@@ -371,6 +433,175 @@
         </div>
       </div>
     </div>
+
+     <!-- Modal Registra Cliente-->
+     <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <form>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputname">Nombre</label>
+                    <input type="text" class="form-control" id="inputname">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputApellido">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputTelefono">Telefono</label>
+                    <input type="text" class="form-control" id="inputApellido">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail">Mail</label>
+                    <input type="text" class="form-control" id="inputname">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Provincia</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Seleccionar...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Localidad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">CP:</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <label for="inputname">Calle</label>
+                    <input type="text" class="form-control" id="inputcalle">
+                  </div>
+                  <div class="form-group col-lg-2">
+                    <label for="inputapellido">Nro.</label>
+                    <input type="number" class="form-control" id="inputApellido">
+                  </div>
+                  <div class="form-group col-lg-2">
+                    <label for="inputapellido">Piso</label>
+                    <input type="number" class="form-control" id="inputApellido">
+                  </div>
+                  <div class="form-group col-lg-2">
+                    <label for="inputapellido">Dpto.</label>
+                    <input type="text" class="form-control" id="inputApellido">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputname">Cuit</label>
+                    <input type="text" class="form-control" id="inputcalle">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Ingresos Brutos</label>
+                    <select id="inputIngresos" class="form-control">
+                      <option selected>Seleccionar...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">IVA</label>
+                    <select id="inputIngresos" class="form-control">
+                      <option selected>Seleccionar...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--************************-->
+
+       <!-- Modal Registra Cliente-->
+    <div class="modal fade" id="modalCarga_modelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <form>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo modelo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputname">Nombre</label>
+                    <input type="text" class="form-control" id="inputname">
+                  </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputAño">Año</label>
+                    <input type="text" class="form-control" id="inputAño">
+                  </div>
+                  <div class="form-row align-items-center">
+                    <div class="col">
+                      <label>Marca</label>
+                      <select id="marca" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected value="NULL">Selecciona...</option>
+                        <option value="Marca 1">Marca 1</option>
+                        <option value="Marca 2">Marca 2</option>
+                        <option value="Marca 3">Marca 3</option>
+                      </select>
+                  <div class="col-auto">
+                    <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea un nuevo marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                 </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--************************-->
+
+       <!-- Modal Registra Cliente-->
+    <div class="modal fade" id="modalCarga_marca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <form>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Carga nueva marca</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputname">Descripcion</label>
+                    <input type="text" class="form-control" id="inputname">
+                  </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--************************-->
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
