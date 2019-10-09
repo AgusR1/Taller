@@ -22,6 +22,7 @@
     <div id="wrapper">
 
       <!-- Sidebar -->
+      <!-- Sidebar -->
       <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
@@ -38,106 +39,100 @@
           <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Vista General</span></a>
-        </li>
+          </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider">
+          <!-- Divider -->
+          <hr class="sidebar-divider">
 
-        <!-- Heading -->
-        <div class="sidebar-heading">
-          Formularios
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fax"></i>
-            <span>Ordenes</span>
-          </a>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Components:</h6>
-              <a class="collapse-item" href="buttons.html">Orden de compra</a>
-              <a class="collapse-item" href="cards.html">Orden de trabajo</a>
-            </div>
+          <!-- Heading -->
+          <div class="sidebar-heading">
+            Ordenes
           </div>
-        </li>
 
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Utilities</span>
-          </a>
-          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Custom Utilities:</h6>
-              <a class="collapse-item" href="utilities-color.html">Colors</a>
-              <a class="collapse-item" href="utilities-border.html">Borders</a>
-              <a class="collapse-item" href="utilities-animation.html">Animations</a>
-              <a class="collapse-item" href="utilities-other.html">Other</a>
-            </div>
+          <!-- Nav Item - Pages Collapse Menu -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="far fa-file-alt"></i>
+              <span>Orden de Compra</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" >
+              <i class="far fa-file-alt"></i>
+              <span>Presupuesto</span>
+            </a>
+          </li>
+          <!-- Divider -->
+          <hr class="sidebar-divider">
+
+          <!-- Heading -->
+          <div class="sidebar-heading">
+            Registros
           </div>
-        </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider">
+          <!-- Nav Item - Pages Collapse Menu -->
+          <!-- Repuestos y maquinarias -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaquinaria" aria-expanded="true" aria-controls="collapsePages">
+              <i class="fas fa-tractor"></i>
+              <span>Maquinarias</span>
+            </a>
+            <div id="collapseMaquinaria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="registro_maquinaria.html">Registrar Maquinaria</a>
+                <a class="collapse-item" href="registro_cliente.html">Ver maquinarias</a>
+              </div>
+            </div>
+          </li>
 
-        <!-- Heading -->
-        <div class="sidebar-heading">
-          Base de Datos
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-address-card"></i>
-            <span>Clientes</span>
-          </a>
-          <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes" aria-expanded="true" aria-controls="collapsePages">
+              <i class="fas fa-address-card"></i>
+              <span>Clientes</span>
+            </a>
+            <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="registro_cliente.html">Registrar Cliente</a>
                 <a class="collapse-item" href="registro_cliente.html">Ver Clientes</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <!-- Proveedores -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProveedores" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-truck"></i>
-            <span>Proveedores</span>
-          </a>
-          <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
+          </li>
+          <!-- Proveedores -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProveedores" aria-expanded="true" aria-controls="collapsePages">
+              <i class="fas fa-truck"></i>
+              <span>Proveedores</span>
+            </a>
+            <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="registro_cliente.html">Registrar Proveedor</a>
                 <a class="collapse-item" href="registro_cliente.html">Ver Proveedores</a>
+              </div>
             </div>
-          </div>
-        </li>
-        <!-- Repuestos y maquinarias -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRepuestos" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-tools"></i>
-            <span>Repuestos y maquinarias</span>
-          </a>
-          <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
+          </li>
+          <!-- Repuestos y maquinarias -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRepuestos" aria-expanded="true" aria-controls="collapsePages">
+              <i class="fas fa-tools"></i>
+              <span>Repuestos</span>
+            </a>
+            <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="registro_cliente.html">Registrar Repuestos</a>
                 <a class="collapse-item" href="registro_cliente.html">Ver repuestos</a>
-                <a class="collapse-item" href="registro_cliente.html">Ver maquinarias</a>
+              </div>
             </div>
+          </li>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider d-none d-md-block">
+
+          <!-- Sidebar Toggler (Sidebar) -->
+          <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
           </div>
-        </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-          <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
-      </ul>
+        </ul>
       <!-- End of Sidebar -->
 
       <!-- Content Wrapper -->
