@@ -1,648 +1,618 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Registro Maquinaria</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <title>Registro Maquinaria</title>
 
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
-  </head>
-  <body>
-    <!-- Page Wrapper -->
-    <div id="wrapper">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
 
-      <!-- Sidebar -->
-      <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+</head>
 
-          <!-- Sidebar - Brand -->
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-            <img src="img\logo.svg" width="40" height="40" style="border-radius:0.5rem;" class="sidebar-brand-icon"></img>
-            <div class="sidebar-brand-text mx-3">NR Admin</div>
-          </a>
+<body>
+  <!-- Page Wrapper -->
+  <div id="wrapper">
 
-          <!-- Divider -->
-          <hr class="sidebar-divider my-0">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-          <!-- Nav Item - Dashboard -->
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <i class="fas fa-fw fa-tachometer-alt"></i>
-              <span>Vista General</span></a>
-            </li>
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <img src="img\logo.svg" width="40" height="40" style="border-radius:0.5rem;" class="sidebar-brand-icon"></img>
+        <div class="sidebar-brand-text mx-3">NR Admin</div>
+      </a>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-              Ordenes
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Vista General</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Ordenes
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="far fa-file-alt"></i>
+          <span>Orden de Compra</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="orden_trabajo.html">
+          <i class="far fa-file-alt"></i>
+          <span>Presupuesto</span>
+        </a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Registros
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Repuestos y maquinarias -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaquinaria"
+          aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-tractor"></i>
+          <span>Maquinarias</span>
+        </a>
+        <div id="collapseMaquinaria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="registro_maquinaria.html">Registrar Maquinaria</a>
+            <a class="collapse-item" href="registro_cliente.html">Ver maquinarias</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes"
+          aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-address-card"></i>
+          <span>Clientes</span>
+        </a>
+        <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="registro_cliente.html">Registrar Cliente</a>
+            <a class="collapse-item" href="registro_cliente.html">Ver Clientes</a>
+          </div>
+        </div>
+      </li>
+      <!-- Proveedores -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProveedores"
+          aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-truck"></i>
+          <span>Proveedores</span>
+        </a>
+        <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="registro_proveedor.html">Registrar Proveedor</a>
+            <a class="collapse-item" href="registro_cliente.html">Ver Proveedores</a>
+          </div>
+        </div>
+      </li>
+      <!-- Repuestos y maquinarias -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRepuestos"
+          aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-tools"></i>
+          <span>Repuestos</span>
+        </a>
+        <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="registro_repuesto.html">Registrar Repuestos</a>
+            <a class="collapse-item" href="registro_cliente.html">Ver repuestos</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
             </div>
+          </form>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="far fa-file-alt"></i>
-                <span>Orden de Compra</span>
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="orden_trabajo.html" >
-                <i class="far fa-file-alt"></i>
-                <span>Presupuesto</span>
-              </a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-              Registros
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <!-- Repuestos y maquinarias -->
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaquinaria" aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-tractor"></i>
-                <span>Maquinarias</span>
-              </a>
-              <div id="collapseMaquinaria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                  <a class="collapse-item" href="registro_maquinaria.html">Registrar Maquinaria</a>
-                  <a class="collapse-item" href="registro_cliente.html">Ver maquinarias</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes" aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-address-card"></i>
-                <span>Clientes</span>
-              </a>
-              <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                  <a class="collapse-item" href="registro_cliente.html">Registrar Cliente</a>
-                  <a class="collapse-item" href="registro_cliente.html">Ver Clientes</a>
-                </div>
-              </div>
-            </li>
-            <!-- Proveedores -->
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProveedores" aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-truck"></i>
-                <span>Proveedores</span>
-              </a>
-              <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                  <a class="collapse-item" href="registro_proveedor.html">Registrar Proveedor</a>
-                  <a class="collapse-item" href="registro_cliente.html">Ver Proveedores</a>
-                </div>
-              </div>
-            </li>
-            <!-- Repuestos y maquinarias -->
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRepuestos" aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-tools"></i>
-                <span>Repuestos</span>
-              </a>
-              <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                  <a class="collapse-item" href="registro_repuesto.html">Registrar Repuestos</a>
-                  <a class="collapse-item" href="registro_cliente.html">Ver repuestos</a>
-                </div>
-              </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-              <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-          </ul>
-        <!-- End of Sidebar -->
-
-      <!-- Content Wrapper -->
-      <div id="content-wrapper" class="d-flex flex-column">
-
-        <!-- Main Content -->
-        <div id="content">
-
-          <!-- Topbar -->
-          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-            <!-- Sidebar Toggle (Topbar) -->
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-              <i class="fa fa-bars"></i>
-            </button>
-
-            <!-- Topbar Search -->
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-              <div class="input-group">
-                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search fa-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-
-            <!-- Topbar Navbar -->
-            <ul class="navbar-nav ml-auto">
-
-              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-              <li class="nav-item dropdown no-arrow d-sm-none">
-                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-search fa-fw"></i>
-                </a>
-                <!-- Dropdown - Messages -->
-                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                  <form class="form-inline mr-auto w-100 navbar-search">
-                    <div class="input-group">
-                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                      <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                          <i class="fas fa-search fa-sm"></i>
-                        </button>
-                      </div>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
                     </div>
-                  </form>
-                </div>
-              </li>
-
-              <!-- Nav Item - Alerts -->
-              <li class="nav-item dropdown no-arrow mx-1">
-                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-bell fa-fw"></i>
-                  <!-- Counter - Alerts -->
-                  <span class="badge badge-danger badge-counter">3+</span>
-                </a>
-                <!-- Dropdown - Alerts -->
-                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                  <h6 class="dropdown-header">
-                    Alerts Center
-                  </h6>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-primary">
-                        <i class="fas fa-file-alt text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500">December 12, 2019</div>
-                      <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-success">
-                        <i class="fas fa-donate text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500">December 7, 2019</div>
-                      $290.29 has been deposited into your account!
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-warning">
-                        <i class="fas fa-exclamation-triangle text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500">December 2, 2019</div>
-                      Spending Alert: We've noticed unusually high spending for your account.
-                    </div>
-                  </a>
-                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                </div>
-              </li>
-
-              <!-- Nav Item - Messages -->
-              <li class="nav-item dropdown no-arrow mx-1">
-                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-envelope fa-fw"></i>
-                  <!-- Counter - Messages -->
-                  <span class="badge badge-danger badge-counter">7</span>
-                </a>
-                <!-- Dropdown - Messages -->
-                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                  <h6 class="dropdown-header">
-                    Message Center
-                  </h6>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div class="font-weight-bold">
-                      <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                      <div class="small text-gray-500">Emily Fowler · 58m</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                      <div class="status-indicator"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                      <div class="small text-gray-500">Jae Chun · 1d</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                      <div class="status-indicator bg-warning"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                      <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                      <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                </div>
-              </li>
-
-              <div class="topbar-divider d-none d-sm-block"></div>
-
-              <!-- Nav Item - User Information -->
-              <li class="nav-item dropdown no-arrow">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                  <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-                </a>
-                <!-- Dropdown - User Information -->
-                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Profile
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Settings
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Activity Log
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Logout
-                  </a>
-                </div>
-              </li>
-
-            </ul>
-
-          </nav>
-          <!-- End of Topbar -->
-
-          <!-- Begin Page Content -->
-          <div class="container-fluid col-lg-9">
-            <div class="card border-left-primary" style="margin-bottom:2rem;">
-              <div class="card-header">
-                Registrar Maquinaria
-              </div>
-              <div class="card-body">
-                <form>
-                    <div class="card-body form-row">
-                      <div class="card col col-6" style="border:#fff;">
-                        <div class="card-body">
-                          <h5>Datos del cliente</h5>
-                          <hr>
-                          <p>Nombre cliente:</p>
-                    <div class="col-md-8 col-sm-6 my-1">
-                        <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                          <option required value="NULL" selected>Selecciona...</option>
-                          <option required value="NULL" >Cliente 1</option>
-                          <option required value="NULL" >Cliente 2</option>
-                          <option required value="NULL" >Cliente 3</option>
-                        </select>
-                      </div>
-                      <div class="col-auto">
-                        <button data-toggle="modal" data-target="#modalCarga_cliente" title="Crea un nuevo cliente" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                     </div>
-                     </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="card col col-6" style="border:#fff;">
-                        <div class="card-body">
-                          <h5>Datos de la maquinaria</h5>
-                          <hr>
-                          <div class="form-row align-items-center">
-                            <div class="col">
-                              <label>Marca</label>
-                              <select id="Marca" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option selected value="NULL">Selecciona...</option>
-                                <option value="1">Marca 1</option>
-                                <option value="2">Marca 2</option>
-                                <option value="3">Marca 3</option>
-                              </select>
-                          <div class="col-auto">
-                            <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea una nueva marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                         </div>
-                          <div class="form-row align-items-center">
-                            <div class="col">
-                              <label>Modelo</label>
-                              <select id="Modelo" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option selected value="NULL">Selecciona...</option>
-                                <option value="1">Modelo 1</option>
-                                <option value="2">Modelo 2</option>
-                                <option value="3">Modelo 3</option>
-                              </select>
-                            <div class="col-auto">
-                              <button data-toggle="modal" data-target="#modalCarga_modelo" title="Crea un nuevo modelo" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                           </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputPatente">Patente</label>
-                            <input type="text" class="form-control" id="inputPatente">
-                            </div>
-                        </div>
-                    </div>
-                  <button type="submit" class="btn btn-primary">Siguiente</button>
+                  </div>
                 </form>
               </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">7</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
+                      having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them
+                      sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so
+                      far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people
+                      say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid col-lg-9">
+          <div class="card border-left-primary" style="margin-bottom:2rem;">
+            <div class="card-header">
+              Registrar Maquinaria
+            </div>
+            <div class="card-body">
+              
             </div>
           </div>
-          <!-- /.container-fluid -->
-
         </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Your Website 2019</span>
-            </div>
-          </div>
-        </footer>
-        <!-- End of Footer -->
+        <!-- /.container-fluid -->
 
       </div>
-      <!-- End of Content Wrapper -->
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
 
     </div>
-    <!-- End of Page Wrapper -->
+    <!-- End of Content Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+  </div>
+  <!-- End of Page Wrapper -->
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Registra Cliente-->
+  <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form>
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+            <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputname">Nombre</label>
+                <input type="text" class="form-control" id="inputname">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputTelefono">Telefono</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Mail</label>
+                <input type="text" class="form-control" id="inputname">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputState">Provincia</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCity">Localidad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">CP:</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label for="inputname">Calle</label>
+                <input type="text" class="form-control" id="inputcalle">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Nro.</label>
+                <input type="number" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Piso</label>
+                <input type="number" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Dpto.</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputname">Cuit</label>
+                <input type="text" class="form-control" id="inputcalle">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Ingresos Brutos</label>
+                <select id="inputIngresos" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">IVA</label>
+                <select id="inputIngresos" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
+  <!--************************-->
 
-     <!-- Modal Registra Cliente-->
-     <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <form>
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+  <!-- Modal registra modelo-->
+  <div class="modal fade" id="modalCarga_modelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo modelo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputname">Nombre</label>
+                <input type="text" class="form-control" id="inputname">
               </div>
-              <div class="modal-body">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputname">Nombre</label>
-                    <input type="text" class="form-control" id="inputname">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputApellido">Apellido</label>
-                    <input type="text" class="form-control" id="inputApellido">
-                  </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputAño">Año</label>
+                  <input type="text" class="form-control" id="inputAño">
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputTelefono">Telefono</label>
-                    <input type="text" class="form-control" id="inputApellido">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail">Mail</label>
-                    <input type="text" class="form-control" id="inputname">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label for="inputState">Provincia</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Seleccionar...</option>
-                      <option>...</option>
+                <div class="form-row align-items-center">
+                  <div class="col">
+                    <label>Marca</label>
+                    <select id="marca" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option selected value="NULL">Selecciona...</option>
+                      <option value="Marca 1">Marca 1</option>
+                      <option value="Marca 2">Marca 2</option>
+                      <option value="Marca 3">Marca 3</option>
                     </select>
+                    <div class="col-auto">
+                      <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea un nuevo marca"
+                        type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      <button type="submit" class="btn btn-primary">Aceptar</button>
+                    </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">Localidad</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">CP:</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <label for="inputname">Calle</label>
-                    <input type="text" class="form-control" id="inputcalle">
-                  </div>
-                  <div class="form-group col-lg-2">
-                    <label for="inputapellido">Nro.</label>
-                    <input type="number" class="form-control" id="inputApellido">
-                  </div>
-                  <div class="form-group col-lg-2">
-                    <label for="inputapellido">Piso</label>
-                    <input type="number" class="form-control" id="inputApellido">
-                  </div>
-                  <div class="form-group col-lg-2">
-                    <label for="inputapellido">Dpto.</label>
-                    <input type="text" class="form-control" id="inputApellido">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label for="inputname">Cuit</label>
-                    <input type="text" class="form-control" id="inputcalle">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">Ingresos Brutos</label>
-                    <select id="inputIngresos" class="form-control">
-                      <option selected>Seleccionar...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">IVA</label>
-                    <select id="inputIngresos" class="form-control">
-                      <option selected>Seleccionar...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!--************************-->
+      </form>
+    </div>
+  </div>
+  <!--************************-->
 
-       <!-- Modal registra modelo-->
-    <div class="modal fade" id="modalCarga_modelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <form>
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo modelo</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+  <!-- Modal Registra marca-->
+  <div class="modal fade" id="modalCarga_marca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Carga nueva marca</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputname">Descripcion</label>
+                <input type="text" class="form-control" id="inputname">
               </div>
-              <div class="modal-body">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputname">Nombre</label>
-                    <input type="text" class="form-control" id="inputname">
-                  </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputAño">Año</label>
-                    <input type="text" class="form-control" id="inputAño">
-                  </div>
-                  <div class="form-row align-items-center">
-                    <div class="col">
-                      <label>Marca</label>
-                      <select id="marca" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected value="NULL">Selecciona...</option>
-                        <option value="Marca 1">Marca 1</option>
-                        <option value="Marca 2">Marca 2</option>
-                        <option value="Marca 3">Marca 3</option>
-                      </select>
-                  <div class="col-auto">
-                    <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea un nuevo marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                 </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 <button type="submit" class="btn btn-primary">Aceptar</button>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-      <!--************************-->
+      </form>
+    </div>
+  </div>
+  <!--************************-->
 
-       <!-- Modal Registra marca-->
-    <div class="modal fade" id="modalCarga_marca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <form>
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Carga nueva marca</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputname">Descripcion</label>
-                    <input type="text" class="form-control" id="inputname">
-                  </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary">Aceptar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!--************************-->
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script type="text/javascript">
+    /* $('#Modelo').change(function () {
+       if (document.getElementById('Modelo').value="1")
+       {
+         document.getElementById('inputMarca').value="Marca 1";
+       }
+       else
+       {
+         if (document.getElementById('Modelo').value="2")
+         {
+         document.getElementById('inputMarca').value="Marca 2";
+         }
+         else
+         {
+             if (document.getElementById('Modelo').value="3")
+             {
+             document.getElementById('inputMarca').value="Marca 3";
+             }
+         }
+       }
+     });*/
+  </script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-    <script type="text/javascript">
-       /* $('#Modelo').change(function () {
-          if (document.getElementById('Modelo').value="1")
-          {
-            document.getElementById('inputMarca').value="Marca 1";
-          }
-          else
-          {
-            if (document.getElementById('Modelo').value="2")
-            {
-            document.getElementById('inputMarca').value="Marca 2";
-            }
-            else
-            {
-                if (document.getElementById('Modelo').value="3")
-                {
-                document.getElementById('inputMarca').value="Marca 3";
-                }
-            }
-          }
-        });*/
-        </script>
+</body>
 
-  </body>
 </html>
