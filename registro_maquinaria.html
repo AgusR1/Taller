@@ -354,10 +354,10 @@
                 <form>
                     <div class="form-row">
                       <div class="col col-6">
-                          <h5>Marca maquinaria:</h5>
+                          <label for="SelectMarca">Marca maquinaria</label>
                           <div class="form-row align-items-center">
                             <div class="col-md-8 col-sm-6 my-1">
-                              <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <select class="custom-select mr-sm-2" id="SelectCliente">
                                 <option required value="NULL" selected>Selecciona...</option>
                                 <option required value="NULL" >Marca 1</option>
                                 <option required value="NULL" >Marca 2</option>
@@ -370,10 +370,10 @@
                           </div>
                       </div>
                       <div class="col col-6">
-                          <h5>Modelo maquinaria:</h5>
+                          <label for="SelectModelo">Modelo Maquinaria</label>
                           <div class="form-row align-items-center">
                             <div class="col-md-8 col-sm-6 my-1">
-                              <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="SelectModelo">
                                 <option required value="NULL" selected>Selecciona...</option>
                                 <option required value="NULL" >Modelo 1</option>
                                 <option required value="NULL" >Modelo 2</option>
@@ -386,18 +386,19 @@
                           </div>
                       </div>
                     </div>
+                    <br>
                     <div class="form-row">
                     <div class="col col-6">
-                      <h5>Patente:</h5>
-                      <div class="input-group">
+                      <label for="IngresaPatente">Patente</label>
+                      <div id="IngresaPatente" class="input-group">
                         <input method="POST" type="text" class="form-control" value="Patente">
                       </div>
                     </div>
                     <div class="col col-6">
-                        <h5>Pertenece a :</h5>
+                        <label for="SelectCliente">Pertenece a</label>
                         <div class="form-row align-items-center">
                           <div class="col-md-8 col-sm-6">
-                            <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <select  name="Cliente" method="POST" class="custom-select mr-sm-2" id="SelectCliente">
                               <option required value="NULL" selected>Selecciona...</option>
                               <option required value="NULL" >Cliente 1</option>
                               <option required value="NULL" >Cliente 2</option>
@@ -410,6 +411,7 @@
                         </div>
                     </div>
                     </div>
+                    <br>
                     <button type="submit" class="btn btn-primary">Acepta</button>
                   </form>
             </div>
