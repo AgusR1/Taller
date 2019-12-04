@@ -325,7 +325,103 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid col-lg-9">
-
+            <div class="card border-left-primary" style="margin-bottom:2rem;">
+              <div class="card-header">
+                Crear odren de compra
+              </div>
+              <div class="card-body">
+                  <form>
+                      <div class="form-row">
+                        <div class="col col-6">
+                            <label for="SelectMarca">Proveedor destinatario</label>
+                            <div class="form-row align-items-center">
+                              <div class="col-md-8 col-sm-6 my-1">
+                                <select class="custom-select mr-sm-2" id="SelectCliente">
+                                  <option required value="NULL" selected>Selecciona...</option>
+                                  <option required value="NULL" >Proveedor 1</option>
+                                  <option required value="NULL" >Proveedor 2</option>
+                                  <option required value="NULL" >Proveedor 3</option>
+                                </select>
+                              </div>
+                              <div class="col-auto">
+                                <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea una nueva marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col col-6">
+                            <label for="SelectModelo">Vendedor</label>
+                            <div class="form-row align-items-center">
+                              <div class="col-md-8 col-sm-6 my-1">
+                                <select class="custom-select mr-sm-2" id="SelectModelo">
+                                  <option required value="NULL" selected>Selecciona...</option>
+                                  <option required value="NULL" >Vendedor 1</option>
+                                  <option required value="NULL" >Vendedor 2</option>
+                                  <option required value="NULL" >Vendedor 3</option>
+                                </select>
+                              </div>
+                              <div class="col-auto">
+                                <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea una nueva marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-row">
+                      <div class="col col-6">
+                          <label for="SelectCondicion">Condicion de pago</label>
+                          <div class="form-row align-items-center">
+                            <div class="col-md-8 col-sm-6 my-1">
+                              <select class="custom-select mr-sm-2" id="SelectModelo">
+                                <option required value="NULL" selected>Selecciona...</option>
+                                <option required value="NULL" >Condicion 1</option>
+                                <option required value="NULL" >Condicion 2</option>
+                                <option required value="NULL" >Condicion 3</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+                      <br>
+                      <div class="form-row">
+                        <div class="col-12">
+                          <label>Repuestos Solicitados</label>
+                          <hr>
+                          <div class="form-row align-items-center">
+                            <div class="col">
+                              <label>Repuesto</label>
+                              <select id="concepto" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected value="NULL">Selecciona...</option>
+                                <option value="Repuesto 1">Repuesto 1</option>
+                                <option value="Repuesto 2">Repuesto 2</option>
+                              </select>
+                            </div>
+                            <div class="col">
+                              <label>Cantidad</label>
+                              <div class="input-group">
+                                <input id="monto_concepto" type="number" class="form-control" value="1">
+                              </div>
+                            </div>
+                            <div class="col-auto" style="margin-top:2rem;">
+                              <button id="carga_concepto" data-toggle="tooltip" data-placement="top" title="Acepta" type="button" onclick="muestra_concepto()" class="btn btn-primary"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="col-auto" style="margin-top:2rem;">
+                              <button data-toggle="modal" data-target="#modalCarga" title="Carga a un nuevo concepto" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-row">
+                        <div class="col col-12">
+                          <label for="IngresaDescripcion">Observaciones</label>
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-primary">Aceptar</button>
+                    </form>
+                </div>
+              </div>
           </div>
           <!-- /.container-fluid -->
 
