@@ -3169,12 +3169,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #4e73df;
+  color: #f0644c;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #224abe;
+  color: #e33718;
   text-decoration: underline;
 }
 
@@ -5192,7 +5192,7 @@ input[type="button"].btn-block {
   z-index: 2;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.2rem #f4788a;
 }
 
 .page-item:first-child .page-link {
@@ -5210,7 +5210,7 @@ input[type="button"].btn-block {
   z-index: 1;
   color: #fff;
   background-color: #f0644c;
-  border-color: #4e73df;
+  border-color: #f0644c;
 }
 
 .page-item.disabled .page-link {
