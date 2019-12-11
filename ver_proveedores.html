@@ -92,7 +92,7 @@
           <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="registro_cliente.html">Registrar Cliente</a>
-              <a class="collapse-item" href="registro_pago_cliente.html">Registrar Pago Cliente</a>
+              <a class="collapse-item" href="registro_cliente.html">Registrar Pago Cliente</a>
               <a class="collapse-item" href="ver_clientes.html">Ver Clientes</a>
             </div>
           </div>
@@ -106,10 +106,10 @@
           <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="registro_proveedor.html">Registrar Proveedor</a>
-              <a class="collapse-item" href="registro_vendedor.html">Registrar Vendedor</a>
-              <a class="collapse-item" href="registro_pago_proveedor.html">Registrar Pago a Proveedor</a>
-              <a class="collapse-item" href="ver_proveedores.html">Ver Proveedores</a>
-              <a class="collapse-item" href="ver_vendedores.html">Ver Vendedores</a>
+              <a class="collapse-item" href="registro_proveedor.html">Registrar Vendedor</a>
+              <a class="collapse-item" href="registro_cliente.html">Registrar Pago a Proveedor</a>
+              <a class="collapse-item" href="registro_cliente.html">Ver Proveedores</a>
+              <a class="collapse-item" href="registro_cliente.html">Ver Vendedores</a>
             </div>
           </div>
         </li>
@@ -122,7 +122,7 @@
           <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="registro_repuesto.html">Registrar Repuestos</a>
-              <a class="collapse-item" href="ver_repuestos.html">Ver repuestos</a>
+              <a class="collapse-item" href="registro_cliente.html">Ver repuestos</a>
             </div>
           </div>
         </li>
@@ -328,8 +328,95 @@
           <!-- End of Topbar -->
 
           <!-- Begin Page Content -->
-          <div class="container-fluid col-lg-9">
-
+          <div class="container-fluid">
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+              <div class="card-header">
+                Clientes
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Nombre y Apellido</th>
+                        <th>Telefono</th>
+                        <th>Mail</th>
+                        <th>Localidad</th>
+                        <th>Detalles</th>
+                        <th>Operaciones</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Nombre y Apellido</th>
+                        <th>Telefono</th>
+                        <th>Mail</th>
+                        <th>Localidad</th>
+                        <th>Detalles</th>
+                        <th>Operaciones</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>Gonzalo Recoulat</td>
+                        <td>2453-435456</td>
+                        <td>gonza@mail.com</td>
+                        <td>Trenque Lauquen</td>
+                        <td><button type="button" class="btn btn-link">Ver mas</button></td>
+                        <td><button class="btn btn-primary" type="button">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-trash"></i>
+                        </button></td>
+                      </tr>
+                      <tr>
+                        <td>Lautaro Cresut</td>
+                        <td>2345-236656</td>
+                        <td>lautaro@gmail.com</td>
+                        <td>Villegas</td>
+                        <td><button type="button" class="btn btn-link">Ver mas</button></td>
+                        <td><button class="btn btn-primary" type="button">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-trash"></i>
+                        </button></td>
+                      </tr>
+                      <tr>
+                        <td>Rodrigo Fernadez</td>
+                        <td>2345-435656</td>
+                        <td>rodrigo@gmail.com</td>
+                        <td>Daireaux</td>
+                        <td><button type="button" class="btn btn-link">Ver mas</button></td>
+                        <td><button class="btn btn-primary" type="button">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-trash"></i>
+                        </button></td>
+                      </tr>
+                      <tr>
+                        <td>Agustin Rosales</td>
+                        <td>2391-123456</td>
+                        <td>agustin@mail.com</td>
+                        <td>30 De Agosto</td>
+                        <td><button type="button" class="btn btn-link">Ver mas</button></td>
+                        <td>
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-trash"></i>
+                        </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- /.container-fluid -->
 
