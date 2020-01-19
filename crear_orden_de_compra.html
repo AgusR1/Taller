@@ -360,94 +360,157 @@
               </div>
               <div class="card-body">
                   <form>
+                    <div class="card-body">
                       <div class="form-row">
-                        <div class="col col-6">
-                            <label for="SelectMarca">Proveedor destinatario</label>
-                            <div class="form-row align-items-center">
-                              <div class="col-md-8 col-sm-6 my-1">
-                                <select class="custom-select mr-sm-2" id="SelectCliente">
-                                  <option required value="NULL" selected>Selecciona...</option>
-                                  <option required value="NULL" >Proveedor 1</option>
-                                  <option required value="NULL" >Proveedor 2</option>
-                                  <option required value="NULL" >Proveedor 3</option>
+                        <div class="col-4"style="margin-right:1rem;">
+                          <label for="validationCustom01">Numero de Orden</label>
+                          <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
+                        </div>
+                        <div class="col-3">
+                          <label for="validationCustom02">Fecha</label>
+                          <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <h4>Proveedor destinatario</h4>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-3 mb-3 form-group">
+                          <label for="validationCustom04">Nombre e ID Proveedor</label>
+                          <select class="custom-select" id="validationCustom04" required>
+                            <option selected value="">Selecciona...</option>
+                            <option>1-Proveedor 1</option>
+                            <option>2-Proveedor 2</option>
+                            <option>3-Proveedor 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Telefono</label>
+                          <input disabled placeholder="2392-346521" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Mail</label>
+                          <input disabled placeholder="cliente@gmail.com" type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Localidad</label>
+                          <input disabled placeholder="Trenque Lauquen" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputPassword4">Calle</label>
+                          <input disabled placeholder="Villegas" type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputPassword4">Altura</label>
+                          <input disabled placeholder="256" type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputPassword4">Piso</label>
+                          <input disabled placeholder="-" type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputPassword4">Depto.</label>
+                          <input disabled placeholder="-" type="email" class="form-control">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <h4>Vendedor Responsable</h4>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-3 mb-3 form-group">
+                          <label for="validationCustom04">Nombre e ID Vendedor</label>
+                          <select class="custom-select" id="validationCustom04" required>
+                            <option selected value="">Selecciona...</option>
+                            <option>1-Vendedor 1</option>
+                            <option>2-Vendedor 2</option>
+                            <option>3-Vendedor 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Telefono</label>
+                          <input disabled placeholder="2392-346521" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Mail</label>
+                          <input disabled placeholder="cliente@gmail.com" type="email" class="form-control">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <h4>Detalle Orden de Compra</h4>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                                <th>#ID</th>
+                                <th>Descripcion</th>
+                                <th>Precio unitario</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                              </tr>
+                            </thead>
+                            <tfoot>
+                              <tr>
+                                <th>#ID</th>
+                                <th>Descripcion</th>
+                                <th>Precio unitario</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                              </tr>
+                            </tfoot>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td>Manguera x10mm</td>
+                                <td>$100</td>
+                                <td>1</td>
+                                <td>$100</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>Bomba Hidraulica</td>
+                                <td>$5600</td>
+                                <td>1</td>
+                                <td>$5600</td>
+                              </tr>
+                              <tr>
+                                <td>-</td>
+                                <td> <select class="custom-select">
+                                  <option selected >Nombre e ID Producto</option>
+                                  <option>1-Producto1</option>
+                                  <option>2-Producto2</option>
+                                  <option>3-Producto3</option>
                                 </select>
-                              </div>
-                              <div class="col-auto">
-                                <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea una nueva marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col col-6">
-                            <label for="SelectModelo">Vendedor</label>
-                            <div class="form-row align-items-center">
-                              <div class="col-md-8 col-sm-6 my-1">
-                                <select class="custom-select mr-sm-2" id="SelectModelo">
-                                  <option required value="NULL" selected>Selecciona...</option>
-                                  <option required value="NULL" >Vendedor 1</option>
-                                  <option required value="NULL" >Vendedor 2</option>
-                                  <option required value="NULL" >Vendedor 3</option>
-                                </select>
-                              </div>
-                              <div class="col-auto">
-                                <button data-toggle="modal" data-target="#modalCarga_marca" title="Crea una nueva marca" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                              </div>
-                            </div>
+                                </td>
+                                <td><input type="number" class="form-control"></td>
+                                <td><input  type="number" class="form-control"></td>
+                                <td>$-</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
-                      <br>
+                      <hr>
+                      <div class="form-group">
+                        <h4>Observaciones</h4>
+                      </div>
                       <div class="form-row">
-                      <div class="col col-6">
-                          <label for="SelectCondicion">Condicion de pago</label>
-                          <div class="form-row align-items-center">
-                            <div class="col-md-8 col-sm-6 my-1">
-                              <select class="custom-select mr-sm-2" id="SelectModelo">
-                                <option required value="NULL" selected>Selecciona...</option>
-                                <option required value="NULL" >Condicion 1</option>
-                                <option required value="NULL" >Condicion 2</option>
-                                <option required value="NULL" >Condicion 3</option>
-                              </select>
-                            </div>
-                          </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
-                      </div>
-                      <br>
-                      <div class="form-row">
-                        <div class="col-12">
-                          <label>Repuestos Solicitados</label>
-                          <hr>
-                          <div class="form-row align-items-center">
-                            <div class="col">
-                              <label>Repuesto</label>
-                              <select id="concepto" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option selected value="NULL">Selecciona...</option>
-                                <option value="Repuesto 1">Repuesto 1</option>
-                                <option value="Repuesto 2">Repuesto 2</option>
-                              </select>
-                            </div>
-                            <div class="col">
-                              <label>Cantidad</label>
-                              <div class="input-group">
-                                <input id="monto_concepto" type="number" class="form-control" value="1">
-                              </div>
-                            </div>
-                            <div class="col-auto" style="margin-top:2rem;">
-                              <button id="carga_concepto" data-toggle="tooltip" data-placement="top" title="Acepta" type="button" onclick="muestra_concepto()" class="btn btn-primary"><i class="fas fa-check"></i></button>
-                            </div>
-                            <div class="col-auto" style="margin-top:2rem;">
-                              <button data-toggle="modal" data-target="#modalCarga" title="Carga a un nuevo concepto" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></i></button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="form-row">
-                        <div class="col col-12">
-                          <label for="IngresaDescripcion">Observaciones</label>
-                          <textarea class="form-control" aria-label="With textarea"></textarea>
-                        </div>
-                      </div>
-                      <br>
+                    </div>
+                    <div class="card-body form-row">
                       <button type="submit" class="btn btn-primary">Aceptar</button>
+                    </div>
                     </form>
                 </div>
               </div>
