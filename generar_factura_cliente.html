@@ -360,353 +360,348 @@
                 Crear Factura a Cliente
               </div>
               <div class="card-body">
-                  <form>
-                    <div class="card-body">
-                      <div class="form-row">
-                        <div class="col-4">
-                          <label for="validationCustom01">Numero de Factura</label>
-                          <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
-                        </div>
-                        <div class="col-4">
-                          <label for="validationCustom04">Tipo Factura</label>
-                          <select class="custom-select" id="validationCustom04" required>
-                            <option selected value="">Selecciona...</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option>C</option>
-                          </select>
-                        </div>
-                        <div class="col-3">
-                          <label for="validationCustom02">Fecha</label>
-                          <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
-                        </div>
+                <form>
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="col-4">
+                        <label for="validationCustom01">Numero de Factura</label>
+                        <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
                       </div>
-                      <hr>
-                      <div class="form-group">
-                        <h4>Datos del Cliente</h4>
+                      <div class="col-4">
+                        <label for="validationCustom04">Tipo Factura</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                          <option selected value="">Selecciona...</option>
+                          <option>A</option>
+                          <option>B</option>
+                          <option>C</option>
+                        </select>
                       </div>
-                      <div class="form-row">
-                        <div class="col-md-3 mb-3 form-group">
-                          <label for="validationCustom04">Nombre e ID Cliente</label>
-                          <select class="custom-select" id="validationCustom04" required>
-                            <option selected value="">Selecciona...</option>
-                            <option>1-Gonzalo Recoulat</option>
-                            <option>2-Agustin Rosales</option>
-                            <option>3-Lautaro Cresut</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-3">
-                          <label for="inputEmail4">Cuil</label>
-                          <input disabled placeholder="20-23.435.567-0" type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-md-3">
-                          <label for="inputPassword4">IVA</label>
-                          <input disabled placeholder="Consumidor final" type="email" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-3">
-                          <label for="inputEmail4">Telefono</label>
-                          <input disabled placeholder="2392-346521" type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label for="inputPassword4">Mail</label>
-                          <input disabled placeholder="cliente@gmail.com" type="email" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-3">
-                          <label for="inputEmail4">Localidad</label>
-                          <input disabled placeholder="Trenque Lauquen" type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-md-3">
-                          <label for="inputPassword4">Calle</label>
-                          <input disabled placeholder="Villegas" type="email" class="form-control">
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label for="inputPassword4">Altura</label>
-                          <input disabled placeholder="256" type="email" class="form-control">
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label for="inputPassword4">Piso</label>
-                          <input disabled placeholder="-" type="email" class="form-control">
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label for="inputPassword4">Depto.</label>
-                          <input disabled placeholder="-" type="email" class="form-control">
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="form-group">
-                        <h4>Ordenes de Trabajo Completas</h4>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-5 mb-3 form-group">
-                          <label for="validationCustom04">ID Orden de Trabajo a Cobrar</label>
-                          <select class="custom-select" id="validationCustom04" required>
-                            <option selected value="">Selecciona...</option>
-                            <option>1-orden1</option>
-                            <option>2-orden2</option>
-                            <option>3-orden3</option>
-                          </select>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="form-row">
-                        <div class="form-group">
-                          <h4>Conceptos</h4>
-                        </div>
-                        <div class="table-responsive">
-                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                              <tr>
-                                <th>#ID</th>
-                                <th>Descripcion</th>
-                                <th>Precio unitario</th>
-                                <th>Cantidad</th>
-                                <th>Total</th>
-                              </tr>
-                            </thead>
-                            <tfoot>
-                              <tr>
-                                <th>#ID</th>
-                                <th>Descripcion</th>
-                                <th>Precio unitario</th>
-                                <th>Cantidad</th>
-                                <th>Total</th>
-                              </tr>
-                            </tfoot>
-                            <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>Revision y diagnostico</td>
-                                <td>$1500</td>
-                                <td>1</td>
-                                <td>$1500</td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>Mano de obra</td>
-                                <td>$5600</td>
-                                <td>1</td>
-                                <td>$5600</td>
-                              </tr>
-                              <tr>
-                                <td>1</td>
-                                <td>Manguera x10mm</td>
-                                <td>$100</td>
-                                <td>1</td>
-                                <td>$100</td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>Bomba Hidraulica</td>
-                                <td>$5600</td>
-                                <td>1</td>
-                                <td>$5600</td>
-                              </tr>
-                              <tr>
-                                <td>-</td>
-                                <td> <select class="custom-select">
-                                  <option selected >Nombre e ID Producto</option>
-                                  <option>1-Producto1</option>
-                                  <option>2-Producto2</option>
-                                  <option>3-Producto3</option>
-                                </select>
-                                </td>
-                                <td><input type="number" class="form-control"></td>
-                                <td><input  type="number" class="form-control"></td>
-                                <td>$-</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="form-group">
-                        <h4>Observaciones</h4>
-                      </div>
-                      <div class="form-row">
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      <div class="col-3">
+                        <label for="validationCustom02">Fecha</label>
+                        <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
                       </div>
                     </div>
-                    <div class="card-body form-row">
-                      <button type="submit" class="btn btn-primary">Aceptar</button>
+                    <hr>
+                    <div class="form-group">
+                      <h4>Ordenes de Trabajo Completas</h4>
                     </div>
-                    </form>
+                    <div class="form-row">
+                      <div class="col-5 mb-3 form-group">
+                        <label for="validationCustom04">ID Orden de Trabajo a Cobrar</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                          <option selected value="">Selecciona...</option>
+                          <option>1-orden1</option>
+                          <option>2-orden2</option>
+                          <option>3-orden3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <h4>Datos del Cliente</h4>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-3 mb-3 form-group">
+                        <label for="validationCustom04">Nombre e ID Cliente</label>
+                        <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">Cuil</label>
+                        <input disabled placeholder="20-23.435.567-0" type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPassword4">IVA</label>
+                        <input disabled placeholder="Consumidor final" type="email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">Telefono</label>
+                        <input disabled placeholder="2392-346521" type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputPassword4">Mail</label>
+                        <input disabled placeholder="cliente@gmail.com" type="email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">Localidad</label>
+                        <input disabled placeholder="Trenque Lauquen" type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPassword4">Calle</label>
+                        <input disabled placeholder="Villegas" type="email" class="form-control">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputPassword4">Altura</label>
+                        <input disabled placeholder="256" type="email" class="form-control">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputPassword4">Piso</label>
+                        <input disabled placeholder="-" type="email" class="form-control">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputPassword4">Depto.</label>
+                        <input disabled placeholder="-" type="email" class="form-control">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <h4>Conceptos</h4>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>#ID</th>
+                              <th>Descripcion</th>
+                              <th>Precio unitario</th>
+                              <th>Cantidad</th>
+                              <th>Total</th>
+                            </tr>
+                          </thead>
+                          <tfoot>
+                            <tr>
+                              <th>#ID</th>
+                              <th>Descripcion</th>
+                              <th>Precio unitario</th>
+                              <th>Cantidad</th>
+                              <th>Total</th>
+                            </tr>
+                          </tfoot>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Revision y diagnostico</td>
+                              <td>$1500</td>
+                              <td>1</td>
+                              <td>$1500</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Mano de obra</td>
+                              <td>$5600</td>
+                              <td>1</td>
+                              <td>$5600</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>Manguera x10mm</td>
+                              <td>$100</td>
+                              <td>1</td>
+                              <td>$100</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Bomba Hidraulica</td>
+                              <td>$5600</td>
+                              <td>1</td>
+                              <td>$5600</td>
+                            </tr>
+                            <tr>
+                              <td>-</td>
+                              <td> <select class="custom-select">
+                                <option selected >Nombre e ID Producto</option>
+                                <option>1-Producto1</option>
+                                <option>2-Producto2</option>
+                                <option>3-Producto3</option>
+                              </select>
+                            </td>
+                            <td><input type="number" class="form-control"></td>
+                            <td><input  type="number" class="form-control"></td>
+                            <td>$-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                    <h4>Observaciones</h4>
+                  </div>
+                  <div class="form-row">
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
                 </div>
-              </div>
-          </div>
-          <!-- /.container-fluid -->
-
-        </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Your Website 2019</span>
+                <div class="card-body form-row">
+                  <button type="submit" class="btn btn-primary">Aceptar</button>
+                </div>
+              </form>
             </div>
           </div>
-        </footer>
-        <!-- End of Footer -->
+        </div>
+        <!-- /.container-fluid -->
 
       </div>
-      <!-- End of Content Wrapper -->
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
 
     </div>
-    <!-- End of Page Wrapper -->
+    <!-- End of Content Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+  </div>
+  <!-- End of Page Wrapper -->
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Registra Cliente-->
+  <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form>
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+            <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputname">Nombre</label>
+                <input type="text" class="form-control" id="inputname">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputTelefono">Telefono</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Mail</label>
+                <input type="text" class="form-control" id="inputname">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputState">Provincia</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCity">Localidad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">CP:</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label for="inputname">Calle</label>
+                <input type="text" class="form-control" id="inputcalle">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Nro.</label>
+                <input type="number" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Piso</label>
+                <input type="number" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Dpto.</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputname">Cuit</label>
+                <input type="text" class="form-control" id="inputcalle">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Ingresos Brutos</label>
+                <select id="inputIngresos" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">IVA</label>
+                <select id="inputIngresos" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
-    <!-- Modal Registra Cliente-->
-    <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <form>
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputname">Nombre</label>
-                  <input type="text" class="form-control" id="inputname">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputApellido">Apellido</label>
-                  <input type="text" class="form-control" id="inputApellido">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputTelefono">Telefono</label>
-                  <input type="text" class="form-control" id="inputApellido">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputEmail">Mail</label>
-                  <input type="text" class="form-control" id="inputname">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputState">Provincia</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Seleccionar...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputCity">Localidad</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip">CP:</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-lg-6">
-                  <label for="inputname">Calle</label>
-                  <input type="text" class="form-control" id="inputcalle">
-                </div>
-                <div class="form-group col-lg-2">
-                  <label for="inputapellido">Nro.</label>
-                  <input type="number" class="form-control" id="inputApellido">
-                </div>
-                <div class="form-group col-lg-2">
-                  <label for="inputapellido">Piso</label>
-                  <input type="number" class="form-control" id="inputApellido">
-                </div>
-                <div class="form-group col-lg-2">
-                  <label for="inputapellido">Dpto.</label>
-                  <input type="text" class="form-control" id="inputApellido">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputname">Cuit</label>
-                  <input type="text" class="form-control" id="inputcalle">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">Ingresos Brutos</label>
-                  <select id="inputIngresos" class="form-control">
-                    <option selected>Seleccionar...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">IVA</label>
-                  <select id="inputIngresos" class="form-control">
-                    <option selected>Seleccionar...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!--************************-->
+  </div>
+  <!--************************-->
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-    <script type="text/javascript">
-    $('#intermediario').change(function () {
-      if ($('#intermediario').is(':checked'))
-      {
-        $("#Carga_intermediario").show("slow");
-      }
-      else
-      {
-        $("#Carga_intermediario").hide();
-      }
-    });
-    </script>
-    <script src="js\muestra_concepto.js"></script>
-  </body>
-  </html>
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script type="text/javascript">
+  $('#intermediario').change(function () {
+    if ($('#intermediario').is(':checked'))
+    {
+      $("#Carga_intermediario").show("slow");
+    }
+    else
+    {
+      $("#Carga_intermediario").hide();
+    }
+  });
+  </script>
+  <script src="js\muestra_concepto.js"></script>
+</body>
+</html>
