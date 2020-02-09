@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Crear Presupuesto Cliente</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <img src="img\logo.svg" width="40" height="40" style="border-radius:0.5rem;" class="sidebar-brand-icon"></img>
+        <div class="sidebar-brand-text mx-3">NR Admin</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Vista General</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Ordenes
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOrdenCompra" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-cart-arrow-down"></i>
+            <span>Ordenes de Compra</span>
+          </a>
+          <div id="collapseOrdenCompra" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="crear_orden_de_compra.html">Crear una orden de Compra</a>
+              <a class="collapse-item" href="ver_ordenes_de_compra.html">Ver ordenes de Compra</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagos" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-receipt"></i>
+            <span>Pagos y Facturas</span>
+          </a>
+          <div id="collapsePagos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="registrar_pago_cliente.html">Registrar Pago de Cliente</a>
+              <a class="collapse-item" href="registrar_pago_proveedor.html">Registrar Pago a Proveedor</a>
+              <a class="collapse-item" href="generar_factura_cliente.html">Generar Factura a Cliente</a>
+              <a class="collapse-item" href="registrar_factura_proveedor.html">Registrar Factura de Proveedor</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePresupuesto" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-file-invoice"></i>
+            <span>Presupuestos y Ordenes de Trabajo</span>
+          </a>
+          <div id="collapsePresupuesto" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="presupuesto_cliente.html">Presupuesto Cliente</a>
+              <a class="collapse-item" href="orden_de_trabajo.html">Orden de Trabajo</a>
+              <a class="collapse-item" href="presupuesto_proveedor.html">Presupuesto Proveedor</a>
+              <a class="collapse-item" href="ver_presupuestos.html">Ver Presupuestos</a>
+            </div>
+          </div>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Registros
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <!-- Repuestos y maquinarias -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaquinaria" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-tractor"></i>
+            <span>Maquinarias</span>
+          </a>
+          <div id="collapseMaquinaria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="registro_maquinaria.html">Registrar Maquinaria</a>
+              <a class="collapse-item" href="ver_maquinarias.html">Ver maquinarias</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-address-card"></i>
+            <span>Clientes</span>
+          </a>
+          <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="registro_cliente.html">Registrar Cliente</a>
+              <a class="collapse-item" href="ver_clientes.html">Ver Clientes</a>
+            </div>
+          </div>
+        </li>
+        <!-- Proveedores -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProveedores" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-truck"></i>
+            <span>Proveedores</span>
+          </a>
+          <div id="collapseProveedores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="registro_proveedor.html">Registrar Proveedor</a>
+              <a class="collapse-item" href="registro_vendedor.html">Registrar Vendedor</a>
+              <a class="collapse-item" href="ver_proveedores.html">Ver Proveedores</a>
+              <a class="collapse-item" href="ver_vendedores.html">Ver Vendedores</a>
+            </div>
+          </div>
+        </li>
+        <!-- Repuestos y maquinarias -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRepuestos" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-tools"></i>
+            <span>Repuestos</span>
+          </a>
+          <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="registro_producto.html">Registrar Productos</a>
+              <a class="collapse-item" href="ver_productos.html">Ver Productos</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bell fa-fw"></i>
+                  <!-- Counter - Alerts -->
+                  <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                    Alerts Center
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 12, 2019</div>
+                      <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 7, 2019</div>
+                      $290.29 has been deposited into your account!
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                      <div class="icon-circle bg-warning">
+                        <i class="fas fa-exclamation-triangle text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">December 2, 2019</div>
+                      Spending Alert: We've noticed unusually high spending for your account.
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+              </li>
+
+              <!-- Nav Item - Messages -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <!-- Counter - Messages -->
+                  <span class="badge badge-danger badge-counter">7</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header">
+                    Message Center
+                  </h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                      <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                      <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                      <div class="small text-gray-500">Jae Chun · 1d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                      <div class="status-indicator bg-warning"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                      <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                      <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+              </li>
+
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                  <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Activity Log
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid col-lg-9">
+            <div class="card border-left-primary" style="margin-bottom:2rem;">
+              <div class="card-header">
+                Crear Orden de Trabajo
+              </div>
+              <div class="card-body">
+                  <form>
+                    <div class="card-body">
+                      <div class="form-row">
+                        <div class="col-4">
+                          <label for="validationCustom01">Numero de Orden de Trabajo</label>
+                          <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
+                        </div>
+                        <div class="col-4">
+                          <label for="validationCustom04">Estado de la Orden</label>
+                          <select class="custom-select" id="validationCustom04" required>
+                            <option selected value="">Selecciona...</option>
+                            <option>En espera</option>
+                            <option>En ejecucion</option>
+                            <option>Completa</option>
+                            <option>Finalizada</option>
+                          </select>
+                        </div>
+                        <div class="col-3">
+                          <label for="validationCustom02">Fecha</label>
+                          <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+                        </div>
+                        <div class="col-1">
+                          <label for="validationCustom01">Turno</label>
+                          <input type="text" disabled class="form-control" id="validationCustom01" value="#3" required>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <h4>Datos del Cliente</h4>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-3 mb-3 form-group">
+                          <label for="validationCustom04">Nombre e ID Cliente</label>
+                          <select class="custom-select" id="validationCustom04" required>
+                            <option selected value="">Selecciona...</option>
+                            <option>1-Gonzalo Recoulat</option>
+                            <option>2-Agustin Rosales</option>
+                            <option>3-Lautaro Cresut</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Cuil</label>
+                          <input disabled placeholder="20-23.435.567-0" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputPassword4">IVA</label>
+                          <input disabled placeholder="Consumidor final" type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Telefono</label>
+                          <input disabled placeholder="2392-346521" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Mail</label>
+                          <input disabled placeholder="cliente@gmail.com" type="email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Localidad</label>
+                          <input disabled placeholder="Trenque Lauquen" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputPassword4">Calle</label>
+                          <input disabled placeholder="Villegas" type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputPassword4">Altura</label>
+                          <input disabled placeholder="256" type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputPassword4">Piso</label>
+                          <input disabled placeholder="-" type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputPassword4">Depto.</label>
+                          <input disabled placeholder="-" type="email" class="form-control">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <h4>Presupuestos Aprobados por el cliente</h4>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-3 mb-3 form-group">
+                          <label for="validationCustom04">Presupuestos</label>
+                          <select class="custom-select" id="validationCustom04" required>
+                            <option selected value="">Selecciona...</option>
+                            <option>1-presupuesto1</option>
+                            <option>2-presupuesto2</option>
+                            <option>3-presupuesto3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <h4>Datos de la Maquinaria</h4>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-3">
+                          <label for="validationCustom01">Matricula</label>
+                          <input type="text" disabled class="form-control" id="validationCustom01" value="345-ABC" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-3">
+                          <label for="inputEmail4">Marca</label>
+                          <input disabled placeholder="Ford" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Modelo</label>
+                          <input disabled placeholder="7840" type="text" class="form-control">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <h4>Servicios a realizar y Repuestos a utilizar</h4>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                                <th>#ID</th>
+                                <th>Descripcion</th>
+                                <th>Operaciones</th>
+                              </tr>
+                            </thead>
+                            <tfoot>
+                              <tr>
+                                <th>#ID</th>
+                                <th>Descripcion</th>
+                                <th>Operaciones</th>
+                              </tr>
+                            </tfoot>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Revision y diagnostico</td>
+                                <td><button class="btn btn-primary" type="button">
+                                  <i class="fas fa-trash"></i>Eliminar
+                                </button></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Mano de obra</td>
+                                <td><button class="btn btn-primary" type="button">
+                                  <i class="fas fa-trash"></i>Eliminar
+                                </button></td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Manguera x10mm</td>
+                                <td><button class="btn btn-primary" type="button">
+                                  <i class="fas fa-trash"></i>Eliminar
+                                </button></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Bomba Hidraulica</td>
+                                <td><button class="btn btn-primary" type="button">
+                                  <i class="fas fa-trash"></i>Eliminar
+                                </button></td>
+                              </tr>
+                              <tr>
+                                <td>-</td>
+                                <td> <select class="custom-select">
+                                  <option selected >Nombre e ID Producto</option>
+                                  <option>1-Producto1</option>
+                                  <option>2-Producto2</option>
+                                  <option>3-Producto3</option>
+                                </select>
+                                </td>
+                                <td>-</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="form-group">
+                        <h4>Observaciones</h4>
+                      </div>
+                      <div class="form-row">
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                    </div>
+                    <div class="card-body form-row">
+                      <button type="submit" class="btn btn-primary">Aceptar</button>
+                    </div>
+                    </form>
+                </div>
+              </div>
+          </div>
+          <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2019</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+
+      </div>
+      <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Registra Cliente-->
+    <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <form>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputname">Nombre</label>
+                  <input type="text" class="form-control" id="inputname">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputApellido">Apellido</label>
+                  <input type="text" class="form-control" id="inputApellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputTelefono">Telefono</label>
+                  <input type="text" class="form-control" id="inputApellido">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Mail</label>
+                  <input type="text" class="form-control" id="inputname">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputState">Provincia</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputCity">Localidad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">CP:</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label for="inputname">Calle</label>
+                  <input type="text" class="form-control" id="inputcalle">
+                </div>
+                <div class="form-group col-lg-2">
+                  <label for="inputapellido">Nro.</label>
+                  <input type="number" class="form-control" id="inputApellido">
+                </div>
+                <div class="form-group col-lg-2">
+                  <label for="inputapellido">Piso</label>
+                  <input type="number" class="form-control" id="inputApellido">
+                </div>
+                <div class="form-group col-lg-2">
+                  <label for="inputapellido">Dpto.</label>
+                  <input type="text" class="form-control" id="inputApellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputname">Cuit</label>
+                  <input type="text" class="form-control" id="inputcalle">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">Ingresos Brutos</label>
+                  <select id="inputIngresos" class="form-control">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">IVA</label>
+                  <select id="inputIngresos" class="form-control">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--************************-->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script type="text/javascript">
+    $('#intermediario').change(function () {
+      if ($('#intermediario').is(':checked'))
+      {
+        $("#Carga_intermediario").show("slow");
+      }
+      else
+      {
+        $("#Carga_intermediario").hide();
+      }
+    });
+    </script>
+    <script src="js\muestra_concepto.js"></script>
+  </body>
+  </html>
