@@ -357,7 +357,7 @@
           <div class="container-fluid col-lg-9">
             <div class="card border-left-primary" style="margin-bottom:2rem;">
               <div class="card-header">
-                Crear Presupuesto a Cliente
+                Registrar Presupuesto Proveedor
               </div>
               <div class="card-body">
                   <form>
@@ -367,15 +367,6 @@
                           <label for="validationCustom01">Numero de Presupuesto</label>
                           <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
                         </div>
-                        <div class="col-4">
-                          <label for="validationCustom04">Estado del Presupuesto</label>
-                          <select class="custom-select" id="validationCustom04" required>
-                            <option selected value="">Selecciona...</option>
-                            <option>Aprobado totalmente</option>
-                            <option>En evaluacion</option>
-                            <option>Aprobado parcialmente</option>
-                          </select>
-                        </div>
                         <div class="col-3">
                           <label for="validationCustom02">Fecha</label>
                           <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
@@ -383,25 +374,17 @@
                       </div>
                       <hr>
                       <div class="form-group">
-                        <h4>Datos del Cliente</h4>
+                        <h4>Datos del Proveedor</h4>
                       </div>
                       <div class="form-row">
                         <div class="col-md-3 mb-3 form-group">
-                          <label for="validationCustom04">Nombre e ID Cliente</label>
+                          <label for="validationCustom04">Nombre e ID Proveedor</label>
                           <select class="custom-select" id="validationCustom04" required>
                             <option selected value="">Selecciona...</option>
-                            <option>1-Gonzalo Recoulat</option>
-                            <option>2-Agustin Rosales</option>
-                            <option>3-Lautaro Cresut</option>
+                            <option>Proveedor 1</option>
+                            <option>Proveedor 2</option>
+                            <option>Proveedor 3</option>
                           </select>
-                        </div>
-                        <div class="form-group col-md-3">
-                          <label for="inputEmail4">Cuil</label>
-                          <input disabled placeholder="20-23.435.567-0" type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-md-3">
-                          <label for="inputPassword4">IVA</label>
-                          <input disabled placeholder="Consumidor final" type="email" class="form-control">
                         </div>
                       </div>
                       <div class="form-row">
@@ -437,37 +420,9 @@
                         </div>
                       </div>
                       <hr>
-                      <div class="form-group">
-                        <h4>Datos de la Maquinaria</h4>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-md-3 mb-3 form-group">
-                          <label for="validationCustom04">Matricula Maquinaria</label>
-                          <select class="custom-select" id="validationCustom04" required>
-                            <option selected value="">Selecciona...</option>
-                            <option>Matricula 1</option>
-                            <option>Matricula 2</option>
-                            <option>Matricula 3</option>
-                          </select>
-                        </div>
-                        <div class="col-auto" style="margin-top:2rem;">
-                          <button data-toggle="modal" data-target="#modalCarga_marca" title="Registra una nueva maquina" type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-3">
-                          <label for="inputEmail4">Marca</label>
-                          <input disabled placeholder="Ford" type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label for="inputPassword4">Modelo</label>
-                          <input disabled placeholder="7840" type="text" class="form-control">
-                        </div>
-                      </div>
-                      <hr>
                       <div class="form-row">
                         <div class="form-group">
-                          <h4>Conceptos y Repuestos a utilizar</h4>
+                          <h4>Productos</h4>
                         </div>
                         <div class="table-responsive">
                           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
