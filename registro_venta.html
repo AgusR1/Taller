@@ -51,7 +51,7 @@
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOrdenCompra" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-tractor"></i>
+            <i class="fas fa-cart-arrow-down"></i>
             <span>Ordenes de Compra</span>
           </a>
           <div id="collapseOrdenCompra" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -62,13 +62,28 @@
           </div>
         </li>
         <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagos" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-receipt"></i>
+            <span>Pagos y Facturas</span>
+          </a>
+          <div id="collapsePagos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <a class="collapse-item" href="registrar_pago_cliente.html">Registrar Pago de Cliente</a>
+              <a class="collapse-item" href="registrar_pago_proveedor.html">Registrar Pago a Proveedor</a>
+              <a class="collapse-item" href="generar_factura_cliente.html">Generar Factura a Cliente</a>
+              <a class="collapse-item" href="registrar_factura_proveedor.html">Registrar Factura de Proveedor</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePresupuesto" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-tractor"></i>
-            <span>Presupuestos</span>
+            <i class="fas fa-file-invoice"></i>
+            <span>Gestionar Presupuestos</span>
           </a>
           <div id="collapsePresupuesto" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-              <a class="collapse-item" href="orden_trabajo.html">Crear un presupuesto</a>
+              <a class="collapse-item" href="presupuesto_cliente.html">Presupuesto Cliente</a>
+              <a class="collapse-item" href="presupuesto_proveedor.html">Presupuesto Proveedor</a>
               <a class="collapse-item" href="ver_presupuestos.html">Ver Presupuestos</a>
             </div>
           </div>
@@ -104,7 +119,6 @@
           <div id="collapseClientes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="registro_cliente.html">Registrar Cliente</a>
-              <a class="collapse-item" href="registro_pago_cliente.html">Registrar Pago Cliente</a>
               <a class="collapse-item" href="ver_clientes.html">Ver Clientes</a>
             </div>
           </div>
@@ -119,7 +133,6 @@
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="registro_proveedor.html">Registrar Proveedor</a>
               <a class="collapse-item" href="registro_vendedor.html">Registrar Vendedor</a>
-              <a class="collapse-item" href="registro_pago_proveedor.html">Registrar Pago a Proveedor</a>
               <a class="collapse-item" href="ver_proveedores.html">Ver Proveedores</a>
               <a class="collapse-item" href="ver_vendedores.html">Ver Vendedores</a>
             </div>
@@ -133,21 +146,8 @@
           </a>
           <div id="collapseRepuestos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-              <a class="collapse-item" href="registro_repuesto.html">Registrar Repuestos</a>
-              <a class="collapse-item" href="ver_repuestos.html">Ver repuestos</a>
-            </div>
-          </div>
-        </li>
-        <!-- Ventas -->
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVentas" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-dollar-sign"></i>
-            <span>Ventas</span>
-          </a>
-          <div id="collapseVentas" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <a class="collapse-item" href="registro_venta.html">Registrar Venta</a>
-              <a class="collapse-item" href="ver_ventas.html">Ver Ventas</a>
+              <a class="collapse-item" href="registro_producto.html">Registrar Productos</a>
+              <a class="collapse-item" href="ver_productos.html">Ver Productos</a>
             </div>
           </div>
         </li>
