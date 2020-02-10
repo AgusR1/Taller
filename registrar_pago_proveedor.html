@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Registrar Pago a Cliente</title>
+  <title>Registrar pago Proveedor</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -360,244 +360,244 @@
                 Registrar Pago de Cliente
               </div>
               <form>
-                <div class="card-body">
-                  <div class="form-row">
-                    <div class="col-4">
-                      <label for="validationCustom01">Numero de Pago</label>
-                      <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
+              <div class="card-body">
+                    <div class="form-row">
+                      <div class="col-4">
+                        <label for="validationCustom01">Numero de Pago</label>
+                        <input type="text" disabled class="form-control" id="validationCustom01" value="#3454" required>
+                      </div>
+                      <div class="col-4">
+                        <label for="validationCustom02">Fecha</label>
+                        <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+                      </div>
                     </div>
-                    <div class="col-4">
-                      <label for="validationCustom02">Fecha</label>
-                      <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+                    <hr>
+                    <div class="form-group">
+                      <h4>Datos de la Factura</h4>
                     </div>
-                  </div>
-                  <hr>
-                  <div class="form-group">
-                    <h4>Datos de la Factura</h4>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-4 mb-3 form-group">
-                      <label for="validationCustom04">Numero de Factura</label>
-                      <select class="custom-select" id="validationCustom04" required>
-                        <option selected value="">Selecciona...</option>
-                        <option>NumFactura1/</option>
-                        <option>NumFactura2</option>
-                        <option>Numfactura3</option>
-                      </select>
+                    <div class="form-row">
+                      <div class="col-4 mb-3 form-group">
+                        <label for="validationCustom04">Numero de Factura</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                          <option selected value="">Selecciona...</option>
+                          <option>NumFactura1/</option>
+                          <option>NumFactura2</option>
+                          <option>Numfactura3</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-4">
+                        <label for="inputPassword4">Nombre Proveedor</label>
+                        <input disabled placeholder="Cliente1" type="text" class="form-control">
+                      </div>
+                      <div class="form-group col-4">
+                        <label for="inputEmail4">Fecha Emision de Factura</label>
+                        <input disabled placeholder="10/12/2019" type="text" class="form-control">
+                      </div>
                     </div>
-                    <div class="form-group col-4">
-                      <label for="inputPassword4">Nombre Cliente</label>
-                      <input disabled placeholder="Cliente1" type="text" class="form-control">
+                    <div class="form-row">
+                      <div class="form-group col-4">
+                        <label for="inputPassword4">Monto Total Factura</label>
+                        <input disabled placeholder="$4500" type="text" class="form-control">
+                      </div>
                     </div>
-                    <div class="form-group col-4">
-                      <label for="inputEmail4">Fecha Emision de Factura</label>
-                      <input disabled placeholder="10/12/2019" type="text" class="form-control">
+                    <hr>
+                    <div class="form-group">
+                      <h4>Informacion del Pago</h4>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-4">
-                      <label for="inputPassword4">Monto Total Factura</label>
-                      <input disabled placeholder="$4500" type="text" class="form-control">
+                    <div class="form-row">
+                      <div class="col-md-3 mb-3 form-group">
+                        <label for="validationCustom04">Monto del Pago</label>
+                        <input placeholder="Monto" type="number" class="form-control">
+                      </div>
+                      <div class="col-4 form-group">
+                        <label for="validationCustom04">Fecha</label>
+                        <input type="date" class="form-control">
+                      </div>
+                      <div class="col-4 form-group">
+                        <label for="validationCustom04">Tipo</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                          <option selected value="">Selecciona...</option>
+                          <option>Contado</option>
+                          <option>Cheque</option>
+                          <option>Tarjeta</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                  <div class="form-group">
-                    <h4>Informacion del Pago</h4>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-md-3 mb-3 form-group">
-                      <label for="validationCustom04">Monto del Pago</label>
-                      <input placeholder="Monto" type="number" class="form-control">
-                    </div>
-                    <div class="col-4 form-group">
-                      <label for="validationCustom04">Fecha</label>
-                      <input type="date" class="form-control">
-                    </div>
-                    <div class="col-4 form-group">
-                      <label for="validationCustom04">Tipo</label>
-                      <select class="custom-select" id="validationCustom04" required>
-                        <option selected value="">Selecciona...</option>
-                        <option>Contado</option>
-                        <option>Cheque</option>
-                        <option>Tarjeta</option>
-                      </select>
-                    </div>
-                  </div>
                   <div class="form-row">
                     <button type="submit" class="btn btn-primary">Aceptar</button>
                   </div>
                 </div>
               </div>
-            </form>
+              </form>
           </div>
-          <!-- /.container-fluid -->
-        </div>
-        <!-- End of Main Content -->
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Your Website 2019</span>
-            </div>
-          </div>
-        </footer>
-        <!-- End of Footer -->
-
+        <!-- /.container-fluid -->
       </div>
-      <!-- End of Content Wrapper -->
+      <!-- End of Main Content -->
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
 
     </div>
-    <!-- End of Page Wrapper -->
+    <!-- End of Content Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+  </div>
+  <!-- End of Page Wrapper -->
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Registra Cliente-->
+  <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form>
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+            <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputname">Nombre</label>
+                <input type="text" class="form-control" id="inputname">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputTelefono">Telefono</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Mail</label>
+                <input type="text" class="form-control" id="inputname">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputState">Provincia</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCity">Localidad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">CP:</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label for="inputname">Calle</label>
+                <input type="text" class="form-control" id="inputcalle">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Nro.</label>
+                <input type="number" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Piso</label>
+                <input type="number" class="form-control" id="inputApellido">
+              </div>
+              <div class="form-group col-lg-2">
+                <label for="inputapellido">Dpto.</label>
+                <input type="text" class="form-control" id="inputApellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputname">Cuit</label>
+                <input type="text" class="form-control" id="inputcalle">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Ingresos Brutos</label>
+                <select id="inputIngresos" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">IVA</label>
+                <select id="inputIngresos" class="form-control">
+                  <option selected>Seleccionar...</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
-    <!-- Modal Registra Cliente-->
-    <div class="modal fade" id="modalCarga_cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <form>
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Carga nuevo cliente</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputname">Nombre</label>
-                  <input type="text" class="form-control" id="inputname">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputApellido">Apellido</label>
-                  <input type="text" class="form-control" id="inputApellido">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputTelefono">Telefono</label>
-                  <input type="text" class="form-control" id="inputApellido">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputEmail">Mail</label>
-                  <input type="text" class="form-control" id="inputname">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputState">Provincia</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Seleccionar...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputCity">Localidad</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip">CP:</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-lg-6">
-                  <label for="inputname">Calle</label>
-                  <input type="text" class="form-control" id="inputcalle">
-                </div>
-                <div class="form-group col-lg-2">
-                  <label for="inputapellido">Nro.</label>
-                  <input type="number" class="form-control" id="inputApellido">
-                </div>
-                <div class="form-group col-lg-2">
-                  <label for="inputapellido">Piso</label>
-                  <input type="number" class="form-control" id="inputApellido">
-                </div>
-                <div class="form-group col-lg-2">
-                  <label for="inputapellido">Dpto.</label>
-                  <input type="text" class="form-control" id="inputApellido">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputname">Cuit</label>
-                  <input type="text" class="form-control" id="inputcalle">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">Ingresos Brutos</label>
-                  <select id="inputIngresos" class="form-control">
-                    <option selected>Seleccionar...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">IVA</label>
-                  <select id="inputIngresos" class="form-control">
-                    <option selected>Seleccionar...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="submit" method="post" class="btn btn-primary">Aceptar</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!--************************-->
+  </div>
+  <!--************************-->
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-    <script type="text/javascript">
-    $('#intermediario').change(function () {
-      if ($('#intermediario').is(':checked'))
-      {
-        $("#Carga_intermediario").show("slow");
-      }
-      else
-      {
-        $("#Carga_intermediario").hide();
-      }
-    });
-    </script>
-    <script src="js\muestra_concepto.js"></script>
-  </body>
-  </html>
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script type="text/javascript">
+  $('#intermediario').change(function () {
+    if ($('#intermediario').is(':checked'))
+    {
+      $("#Carga_intermediario").show("slow");
+    }
+    else
+    {
+      $("#Carga_intermediario").hide();
+    }
+  });
+  </script>
+  <script src="js\muestra_concepto.js"></script>
+</body>
+</html>
